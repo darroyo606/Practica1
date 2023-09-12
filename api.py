@@ -17,6 +17,7 @@ def get_ticker(ticker):
     return get_price(ticker)
 
 
+
 @app.route("/api/<ticker>", methods=["POST"])
 def post_ticker(ticker):
     document = get_price(ticker)

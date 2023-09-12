@@ -17,5 +17,6 @@ def get_price(ticker: str, verbose: bool = False) -> float:
     return precio
 
 
+
 for t in tickers:
     get_price(ticker=t, verbose=True)
