@@ -10,6 +10,7 @@ def get_price(ticker: str, verbose: bool = False) -> dict:
     precio = r['chart']['result'][0]['meta']['regularMarketPrice']
     currency = r['chart']['result'][0]['meta']['currency']
 
+
     if verbose:
         print(f"{ticker}: {precio} {currency}")
     return {
